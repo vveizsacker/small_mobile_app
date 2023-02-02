@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#191919">
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bargaoui Jawher"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:padding="25dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Height"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#575757"
+                android:textSize="20dp"></EditText>
+        <TextView
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Cm"></TextView>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/weight"
+
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:hint="Weight"
+                android:padding="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="#575757"
+                android:textSize="20dp"></EditText>
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Kg"></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/age"
+
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:hint="Age"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="#575757"
+                    android:textSize="20dp">
+
+                </EditText>
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="yo">
+
+            </TextView>
+            </LinearLayout>
+            <TextView
+            android:layout_marginBottom="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Sexe"
+            android:textSize="20dp">
+        </TextView>
+        <RadioGroup
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man"
+                android:textSize="20dp"
+
+                android:textColor="@color/white"
+                android:id="@+id/r_man">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woman"
+                android:textSize="20dp"
+
+                android:textColor="@color/white"
+                android:id="@+id/r_woman">
+
+            </RadioButton>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="@color/white"
+            android:text="CALCULATE"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:backgroundTint="@null">
+
+        </Button>
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="#000000"
+                android:text="LOGOUT"
+                android:textSize="20dp"
+                android:textColor="#818181"
+                app:backgroundTint="@null">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
